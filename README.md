@@ -1,9 +1,10 @@
 # Predict-travel-time-using-XGBoost
-Use the NYC taxi dataset to predict travel time between two location coordinates using XGBoost
+The NYC taxi dataset is used to predict the travel time between two given location coordinates using the XGBoost algorithm.
 
 Data_Preprocessing_XGBoost.ipynb
 
-This file performs the following three tasks - 
+This file performs the following tasks - 
+
 1)Data pre-processing:
 * The NYC taxi dataset is loaded into a Pandas data frame.
 * The unwanted columns are removed.
@@ -16,9 +17,6 @@ This file performs the following three tasks -
 * RootMeanSquareLogError is used as the evaluation metric.
 * The XGBoost model is trained with the specified parameters on the train set.
 * The model is then used to predict trip duration on the test set.
-* The Mean Absolute Error (MAE) is calculated for comparison with the LightGBM model in the next stage.
+* The Mean Absolute Error (MAE) is calculated to determine the performance of the XGBoost model.
 
-3)Lookup Table:
-* A sample set of 11 and 25 location coordinates is saved in test_locations11 and test_locations25 respectively. 
-* These sample destination points along with a sample date time value are passed as input to the trained XGBoost model. 
-* The model predicts the trip duration for each pair of location coordinates, the results of which are stored as a lookup table to be fed to the Genetic algorithm in the next stage.
+
