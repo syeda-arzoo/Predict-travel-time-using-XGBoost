@@ -5,7 +5,7 @@ Data_Preprocessing_XGBoost.ipynb
 
 This file performs the following tasks - 
 
-1)Data pre-processing:
+1) Data pre-processing:
 * The NYC taxi dataset is loaded into a Pandas data frame.
 * The unwanted columns are removed.
 * The PULocationID and DOLocationID are used to identify the corresponding taxi zones and their respective location coordinates which are stored as new attributes in the dataset.
